@@ -12,7 +12,7 @@ const introdata = {
         third: "I develop intelligent workflows",
     },
     description: "Passionate about creating AI-powered solutions and data extraction systems that revolutionize how businesses operate. Expert in web scraping with Node.js, specializing in building intelligent automated workflows, data collection systems, and modern web applications.",
-    your_img_url: "/faceless.jpeg",
+    your_img_url: "https://images.unsplash.com/photo-1514790193030-c89d266d5a9d",
 };
 
 const dataabout = {
