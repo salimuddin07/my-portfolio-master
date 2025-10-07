@@ -4,7 +4,7 @@ import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { meta } from "../../content_option";
 import { Container, Row, Col, Alert } from "react-bootstrap";
-import { contactConfig } from "../../content_option";
+import { contactConfig, socialprofils } from "../../content_option";
 
 export const ContactUs = () => {
   const [formData, setFormdata] = useState({
@@ -110,6 +110,22 @@ export const ContactUs = () => {
               )}
             </address>
             <p>{contactConfig.description}</p>
+            <div className="social-links mt-4">
+              <h5>Connect with me:</h5>
+              <div className="social-icons">
+                {Object.entries(socialprofils).map(([platform, url]) => (
+                  <a
+                    key={platform}
+                    href={url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`social-link ${platform}`}
+                  >
+                    {platform.charAt(0).toUpperCase() + platform.slice(1)}
+                  </a>
+                ))}
+              </div>
+            </div>
           </Col>
           <Col lg="7" className="d-flex align-items-center">
             <form onSubmit={handleSubmit} className="contact__form w-100">

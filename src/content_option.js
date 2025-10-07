@@ -1,144 +1,160 @@
-const logotext = "JOHN";
+const logotext = "SALIMUDDIN";
 const meta = {
-    title: "John Doe",
-    description: "I’m John Doe data scientist _ Full stack devloper,currently working in Berlin",
+    title: "Salimuddin Saiyed - AI Automation Developer",
+    description: "Passionate AI Automation Developer specializing in web scraping, data extraction, and intelligent workflow automation. Expert in Node.js with 50+ successful scrapers deployed.",
 };
 
 const introdata = {
-    title: "I’m John Doe",
+    title: "I'm Salimuddin Saiyed",
     animated: {
-        first: "I love coding",
-        second: "I code cool websites",
-        third: "I develop mobile apps",
+        first: "I build AI automation solutions",
+        second: "I create web scraping systems",
+        third: "I develop intelligent workflows",
     },
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum",
-    your_img_url: "https://images.unsplash.com/photo-1514790193030-c89d266d5a9d",
+    description: "Passionate about creating AI-powered solutions and data extraction systems that revolutionize how businesses operate. Expert in web scraping with Node.js, specializing in building intelligent automated workflows, data collection systems, and modern web applications.",
+    your_img_url: "/faceless.jpeg",
 };
 
 const dataabout = {
-    title: "abit about my self",
-    aboutme: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis dolor id ligula semper elementum feugiat pretium nulla. Nunc non commodo dolor. Nunc mollis dignissim facilisis. Morbi ut magna ultricies.",
+    title: "About My Expertise",
+    aboutme: "AI Automation Developer & Web Scraping Expert with proven expertise in creating intelligent automation solutions. Specialized in Node.js development with 50+ successful web scrapers deployed and 30+ automation tools created. I transform business operations through data extraction systems, chatbot integrations, and custom workflow automation.",
 };
+
 const worktimeline = [{
-        jobtitle: "Designer of week",
-        where: "YAdfi",
-        date: "2020",
+        jobtitle: "AI Automation Developer & Web Scraping Expert",
+        where: "Freelance",
+        date: "2022 - Present",
     },
     {
-        jobtitle: "Designer of week",
-        where: "Jamalya",
-        date: "2019",
+        jobtitle: "Full-Stack Developer",
+        where: "Various Projects",
+        date: "2021 - 2022",
     },
     {
-        jobtitle: "Designer of week",
-        where: "ALquds",
-        date: "2019",
+        jobtitle: "Computer Science Student",
+        where: "University",
+        date: "2019 - 2023",
     },
 ];
 
 const skills = [{
-        name: "Python",
+        name: "Node.js",
+        value: 95,
+    },
+    {
+        name: "Web Scraping",
+        value: 95,
+    },
+    {
+        name: "JavaScript",
         value: 90,
     },
     {
-        name: "Djano",
-        value: 85,
-    },
-    {
-        name: "Javascript",
-        value: 80,
-    },
-    {
         name: "React",
-        value: 60,
+        value: 85,
     },
     {
-        name: "Jquery",
+        name: "MongoDB",
         value: 85,
+    },
+    {
+        name: "PHP",
+        value: 75,
+    },
+    {
+        name: "AI Integration",
+        value: 90,
     },
 ];
 
 const services = [{
-        title: "UI & UX Design",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+        title: "🕷️ Web Scraping & Data Extraction",
+        description: "Expert-level web scraping solutions using Node.js for automated data collection from any website. 50+ successful scrapers deployed with anti-detection and proxy management.",
     },
     {
-        title: "Mobile Apps",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+        title: "🤖 AI Chatbot Integrations",
+        description: "WhatsApp, Telegram, and Web-based intelligent chatbots that engage customers 24/7 with natural language processing and custom conversation flows.",
     },
     {
-        title: "Wordpress Design",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+        title: "🔁 Advanced Workflow Automation",
+        description: "Optimize business processes with n8n, Make, Zapier integrations and custom Node.js automation. 30+ automation tools and workflows created.",
+    },
+    {
+        title: "📊 Custom Dashboards",
+        description: "Data-driven web applications and dashboards tailored to business needs with real-time analytics and interactive visualizations.",
+    },
+    {
+        title: "🧠 AI-Powered Analytics",
+        description: "Intelligent responses and deep analytics to understand data better with predictive analytics and automated reporting.",
+    },
+    {
+        title: "⭐ Complete AI Solutions",
+        description: "End-to-end AI automation for businesses ready to transform operations with full-stack development and AI model integration.",
     },
 ];
 
 const dataportfolio = [{
-        img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
+        img: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=400&h=300&fit=crop",
+        title: "Advanced Web Scraping Suite",
+        description: "Comprehensive web scraping solution with Node.js, capable of extracting data from complex websites with anti-detection measures. 50+ scrapers deployed successfully.",
+        link: "https://github.com/salimuddin07",
+        category: "Web Scraping",
+        tech: "Node.js, Puppeteer, Playwright, Cheerio"
     },
     {
-        img: "https://picsum.photos/400/800/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
+        img: "https://images.unsplash.com/photo-1531482615713-2afd69097998?w=400&h=300&fit=crop",
+        title: "Intelligent Chatbot Platform",
+        description: "Advanced AI-powered chatbot system with multi-platform integration supporting WhatsApp, Telegram, and web interfaces with NLP.",
+        link: "https://github.com/salimuddin07",
+        category: "AI Automation",
+        tech: "Node.js, Python, AI APIs, WhatsApp API"
     },
     {
-        img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
+        img: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop",
+        title: "Automation Dashboard",
+        description: "Comprehensive dashboard for managing automated workflows, social media posting, and business process optimization with real-time analytics.",
+        link: "https://github.com/salimuddin07",
+        category: "Web Development",
+        tech: "React, Node.js, MongoDB, n8n"
     },
     {
-        img: "https://picsum.photos/400/600/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
+        img: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=400&h=300&fit=crop",
+        title: "E-commerce AI Assistant",
+        description: "Intelligent shopping assistant with personalized recommendations, automated customer support, and inventory management integration.",
+        link: "https://github.com/salimuddin07",
+        category: "AI Integration",
+        tech: "Python, Machine Learning, PostgreSQL, FastAPI"
     },
     {
-        img: "https://picsum.photos/400/300/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
+        img: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=400&h=300&fit=crop",
+        title: "Social Media Automation",
+        description: "Advanced content scheduling and posting automation for Instagram, Facebook, and Twitter with AI-powered content optimization.",
+        link: "https://github.com/salimuddin07",
+        category: "Content Automation",
+        tech: "JavaScript, Instagram API, Zapier, Vue.js"
     },
     {
-        img: "https://picsum.photos/400/700/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-
-    {
-        img: "https://picsum.photos/400/600/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
+        img: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop",
+        title: "AI Analytics Platform",
+        description: "Comprehensive data analytics platform with machine learning insights, predictive modeling, and interactive visualizations for business intelligence.",
+        link: "https://github.com/salimuddin07",
+        category: "Data Science",
+        tech: "Python, TensorFlow, D3.js, AWS"
     },
     {
-        img: "https://picsum.photos/400/300/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/550/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/700/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
+        img: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop",
+        title: "Enterprise Web Application",
+        description: "Scalable enterprise web application with user authentication, real-time notifications, payment integration, and comprehensive admin dashboard.",
+        link: "https://github.com/salimuddin07",
+        category: "Full-Stack",
+        tech: "React, TypeScript, GraphQL, Docker"
     },
 ];
 
 const contactConfig = {
-    YOUR_EMAIL: "name@domain.com",
-    YOUR_FONE: "(555)123-4567",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vehicula eu nunc et sollicitudin. Cras pulvinar, nisi at imperdiet pharetra. ",
+    YOUR_EMAIL: "salimuddinsaiyed5@gmail.com",
+    YOUR_FONE: "+91-XXXXXXXXXX",
+    description: "Ready to transform your business with AI automation? Let's discuss your web scraping, data extraction, or automation needs. I'm here to help you build intelligent solutions that drive results.",
     // creat an emailjs.com account 
     // check out this tutorial https://www.emailjs.com/docs/examples/reactjs/
     YOUR_SERVICE_ID: "service_id",
@@ -147,11 +163,14 @@ const contactConfig = {
 };
 
 const socialprofils = {
-    github: "https://github.com",
-    facebook: "https://facebook.com",
-    linkedin: "https://linkedin.com",
-    twitter: "https://twitter.com",
+    github: "https://github.com/salimuddin07",
+    facebook: "https://www.facebook.com/salimuddin007/",
+    linkedin: "https://www.linkedin.com/in/salimuddin07",
+    twitter: "https://x.com/salimuddin007",
+    instagram: "https://www.instagram.com/iam_salimuddin_07/",
+    telegram: "https://web.telegram.org/k/",
 };
+
 export {
     meta,
     dataabout,

@@ -37,7 +37,7 @@ export const About = () => {
         </Row>
         <Row className=" sec_sp">
           <Col lg="5">
-            <h3 className="color_sec py-4">Work Timline</h3>
+            <h3 className="color_sec py-4">Professional Timeline</h3>
           </Col>
           <Col lg="7">
             <table className="table caption-top">
@@ -80,8 +80,8 @@ export const About = () => {
           </Col>
         </Row>
         <Row className="sec_sp">
-          <Col lang="5">
-            <h3 className="color_sec py-4">services</h3>
+          <Col lg="5">
+            <h3 className="color_sec py-4">Core Services</h3>
           </Col>
           <Col lg="7">
             {services.map((data, i) => {
@@ -92,6 +92,37 @@ export const About = () => {
                 </div>
               );
             })}
+          </Col>
+        </Row>
+        <Row className="sec_sp">
+          <Col lg="12">
+            <h3 className="color_sec py-4 text-center">Professional Achievements</h3>
+            <Row className="achievements-grid">
+              <Col md="3" className="text-center mb-4">
+                <div className="achievement-item">
+                  <h2 className="achievement-number">50+</h2>
+                  <p>Web Scrapers Deployed</p>
+                </div>
+              </Col>
+              <Col md="3" className="text-center mb-4">
+                <div className="achievement-item">
+                  <h2 className="achievement-number">30+</h2>
+                  <p>Automation Tools Created</p>
+                </div>
+              </Col>
+              <Col md="3" className="text-center mb-4">
+                <div className="achievement-item">
+                  <h2 className="achievement-number">100+</h2>
+                  <p>Projects Completed</p>
+                </div>
+              </Col>
+              <Col md="3" className="text-center mb-4">
+                <div className="achievement-item">
+                  <h2 className="achievement-number">50+</h2>
+                  <p>Happy Clients</p>
+                </div>
+              </Col>
+            </Row>
           </Col>
         </Row>
       </Container>

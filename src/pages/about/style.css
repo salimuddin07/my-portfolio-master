@@ -63,11 +63,47 @@
 
 .service__title {
     padding: 8px 0;
-    border-bottom: solid 2px var(--secondary-color);
+    border-bottom: solid 2px var(--primary-color);
+    color: var(--primary-color);
+    font-weight: 600;
 }
 
 .service-section .service-category-title {
     padding-bottom: 4px;
+}
+
+/* Achievement Section Styling */
+.achievements-grid {
+    margin-top: 2rem;
+}
+
+.achievement-item {
+    background: var(--secondary-color);
+    padding: 2rem 1rem;
+    border-radius: 12px;
+    text-align: center;
+    transition: 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.achievement-item:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary-color);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.achievement-item .achievement-number {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.achievement-item p {
+    color: var(--text-color-2);
+    margin: 0;
+    font-weight: 500;
+    font-size: 0.9rem;
 }
 
 
