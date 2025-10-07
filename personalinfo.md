@@ -23,12 +23,7 @@
 
 ## 📋 **PERSONAL INFORMATION**
 
-### Basic Info
-- **Name**: Code Catalyst AI  
-- **Professional Title**: AI Automation Developer, Web Scraping Expert & Full-Stack Engineer
-- **Tagline**: "Transforming businesses through intelligent automation, web scraping, and cutting-edge web technologies"
-- **Location**: Available Globally (Remote Services)
-- **Experience**: 3+ Years in AI Automation, Web Development & Data Scraping
+
 
 ### Professional Description
 "Passionate about creating AI-powered solutions and data extraction systems that revolutionize how businesses operate. Expert in web scraping with Node.js, specializing in building intelligent automated workflows, data collection systems, and modern web applications."
@@ -39,15 +34,13 @@
 
 ### Primary Contacts
 - **Email**: salimuddinsaiyed5@gmail.com
-- **WhatsApp**: [Contact via WhatsApp]
-- **Phone**: +1234567890 (Update with actual number)
 
 ### Social Media Links
 - **GitHub**: https://github.com/salimuddin07
-- **LinkedIn**: https://www.linkedin.com/in/ai-automation-275ab6359/
+- **LinkedIn**: https://www.linkedin.com/in/salimuddin07
 - **Instagram**: https://www.instagram.com/iam_salimuddin_07/
-- **Twitter**: https://x.com/salimuddin07860
-- **Facebook**: https://www.facebook.com/saiyedsalimuddin07/
+- **Twitter**: https://x.com/salimuddin007
+- **Facebook**: https://www.facebook.com/salimuddin007/
 - **Telegram**: https://web.telegram.org/k/
 
 ---
@@ -217,19 +210,19 @@
 
 ## 📈 **PROFESSIONAL EXPERIENCE**
 
-### AI Automation Developer & Web Scraping Expert (2023 - Present)
+### AI Automation Developer & Web Scraping Expert
 - Specializing in creating intelligent automation solutions and data extraction systems
 - Expert in Node.js web scraping with 50+ successful scrapers deployed
 - Developed 30+ automation tools and workflows for various industries
 - Chatbot integrations and AI-powered web applications
 - Serving diverse clients across industries with data collection needs
 
-### Full-Stack Developer (2022 - 2023)  
+### Full-Stack Develope
 - Developed responsive web applications using modern frameworks
 - Contributed to various open-source projects
 - Built scalable web solutions
 
-### Computer Science Studies (2020 - 2022)
+### Computer Science Studies
 - Focused on software engineering principles
 - Data structures, algorithms, and emerging technologies
 - Foundation in AI and machine learning
@@ -242,14 +235,11 @@
 - **100+** Projects Completed
 - **50+** Web Scrapers Successfully Deployed
 - **30+** Automation Tools & Workflows Created
-- **50+** Happy Clients  
-- **24/7** Support & Maintenance
-- **3+** Years Experience
+- **50+** Happy Clients 
 
 ### Core Competencies
 - ✅ **Web Scraping & Data Extraction (Expert)**
 - ✅ **Node.js Automation Development (Expert)**
-- ✅ AI & Machine Learning
 - ✅ Web Development
 - ✅ Chatbot Integration  
 - ✅ Advanced Workflow Automation
@@ -258,83 +248,6 @@
 
 ---
 
-## 🎨 **DESIGN & BRANDING**
-
-### Color Scheme (Premium Theme)
-- **Primary**: #6366F1 (Indigo)
-- **Primary Dark**: #4F46E5  
-- **Primary Light**: #818CF8
-- **Secondary**: #0F172A (Dark Blue)
-- **Accent**: #8B5CF6 (Purple)
-
-### Typography
-- **Main Font**: Inter (Clean, modern)
-- **Accent Fonts**: 
-  - Orbitron (Tech/futuristic)
-  - Space Grotesk (Modern sans-serif)
-  - Playfair Display (Elegant serif)
-  - JetBrains Mono (Code display)
-
-### Assets Required
-- **Profile Photo**: assets/icons/profile-photo.jpg
-- **Logo/Icon**: assets/icons/robot.svg  
-- **Favicon**: robot.svg
-
----
-
-## 🛠️ **TECHNICAL IMPLEMENTATION**
-
-### File Structure
-```
-portfolio/
-├── index.html              # Main HTML file
-├── css/
-│   └── style.css          # Main stylesheet  
-├── js/
-│   ├── script.js          # Main JavaScript
-│   ├── config.js          # Configuration
-│   └── email-service.js   # Contact form handling
-├── assets/
-│   └── icons/
-│       ├── profile-photo.jpg
-│       └── robot.svg
-└── server.js              # Node.js server
-```
-
-### External Dependencies
-- **GSAP**: Animation library
-- **ScrollTrigger**: Scroll-based animations  
-- **EmailJS**: Contact form service
-- **Font Awesome**: Icon library
-- **Google Fonts**: Typography
-
-### Features Implemented
-- ✅ Responsive design (mobile-first)
-- ✅ Smooth scrolling navigation
-- ✅ Professional animations (GSAP)
-- ✅ Contact form with EmailJS
-- ✅ WhatsApp integration
-- ✅ Social media links
-- ✅ Theme toggle (dark/light)
-- ✅ Professional styling
-- ✅ SEO optimization
-
----
-
-## 🚀 **DEPLOYMENT GUIDE**
-
-### Local Development
-1. **Server Setup**: Node.js HTTP server (port 3000)
-2. **File Serving**: Static files with proper MIME types
-3. **Cache Headers**: No-cache for development
-
-### Production Deployment
-- **Hosting**: Any web server (Apache, Nginx, Netlify, Vercel)
-- **Domain**: Custom domain recommended
-- **SSL**: HTTPS certificate required
-- **CDN**: For faster global loading
-
----
 
 ## 📞 **CONTACT FORM SERVICES**
 
@@ -348,10 +261,6 @@ portfolio/
 
 ### Contact Methods
 - **Direct Email**: salimuddinsaiyed5@gmail.com
-- **WhatsApp**: Quick communication
-- **LinkedIn**: Professional networking  
-- **Telegram**: Instant messaging
-- **Contact Form**: Project inquiries
 
 ---
 
