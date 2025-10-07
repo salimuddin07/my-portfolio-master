@@ -2,8 +2,6 @@ section {
     flex: 1 0 auto;
     position: relative;
     width: 100%;
-    max-width: 100%;
-    overflow-x: hidden;
     -webkit-transition: all .5s ease-in;
     -o-transition: all .5s ease-in;
     transition: all .5s ease-in;
@@ -33,38 +31,22 @@ section {
 }
 
 .intro_sec {
-    min-height: 100vh;
+    height: calc(100vh - 60px);
+    min-height: 700px;
     height: 100vh;
     margin-top: -60px;
-    overflow: hidden;
-}
-
-@media (max-width: 1200px) {
-    .intro_sec {
-        min-height: auto;
-        height: auto;
-    }
 }
 
 @media (max-width:991.98px) {
     .intro_sec {
         display: block;
         height: auto!important;
-        min-height: auto;
     }
 }
 
 .intro_sec .text,
 .intro_sec .h_bg-image {
     width: 50%;
-    flex-shrink: 0;
-}
-
-@media (max-width: 1200px) {
-    .intro_sec .text,
-    .intro_sec .h_bg-image {
-        width: 100%;
-    }
 }
 
 @media (max-width:991.98px) {
@@ -77,14 +59,6 @@ section {
 .intro_sec .intro {
     max-width: 450px;
     margin: 0 auto;
-    padding: 20px;
-}
-
-@media (max-width: 1200px) {
-    .intro_sec .intro {
-        max-width: 600px;
-        padding: 30px 40px;
-    }
 }
 
 @media (max-width:991.98px) {
@@ -92,12 +66,6 @@ section {
         max-width: 700px;
         padding-left: 20px;
         padding-right: 20px;
-    }
-}
-
-@media (max-width: 576px) {
-    .intro_sec .intro {
-        padding: 15px;
     }
 }
 
@@ -126,14 +94,8 @@ section {
 .intro_sec .h_bg-image {
     background-size: cover;
     background-position: center;
-    min-height: 100vh;
+    min-height: 700px;
     position: relative;
-}
-
-@media (max-width: 1200px) {
-    .intro_sec .h_bg-image {
-        min-height: 600px;
-    }
 }
 
 .ac_btn {
@@ -146,16 +108,6 @@ section {
     cursor: pointer;
     border-radius: 0;
     margin-right: 20px;
-    margin-bottom: 10px;
-    display: inline-block;
-}
-
-@media (max-width: 576px) {
-    .ac_btn {
-        margin-right: 10px;
-        padding: 4px 15px;
-        font-size: 14px;
-    }
 }
 
 .ac_btn a {
