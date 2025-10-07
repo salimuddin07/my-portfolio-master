@@ -22,18 +22,13 @@ const dataabout = {
 
 const worktimeline = [{
         jobtitle: "AI Automation Developer & Web Scraping Expert",
-        where: "Freelance",
-        date: "2022 - Present",
+        where: "Pimatrix Systems",
+        date: "This Year",
     },
     {
         jobtitle: "Full-Stack Developer",
-        where: "Various Projects",
-        date: "2021 - 2022",
-    },
-    {
-        jobtitle: "Computer Science Student",
-        where: "University",
-        date: "2019 - 2023",
+        where: "Pimatrix Systems",
+        date: "This Year",
     },
 ];
 
@@ -62,33 +57,37 @@ const skills = [{
         value: 75,
     },
     {
+        name: "Python",
+        value: 45,
+    },
+    {
         name: "AI Integration",
         value: 90,
     },
 ];
 
 const services = [{
-        title: "🕷️ Web Scraping & Data Extraction",
+        title: "Web Scraping & Data Extraction",
         description: "Expert-level web scraping solutions using Node.js for automated data collection from any website. 50+ successful scrapers deployed with anti-detection and proxy management.",
     },
     {
-        title: "🤖 AI Chatbot Integrations",
+        title: "AI Chatbot Integrations",
         description: "WhatsApp, Telegram, and Web-based intelligent chatbots that engage customers 24/7 with natural language processing and custom conversation flows.",
     },
     {
-        title: "🔁 Advanced Workflow Automation",
+        title: "Advanced Workflow Automation",
         description: "Optimize business processes with n8n, Make, Zapier integrations and custom Node.js automation. 30+ automation tools and workflows created.",
     },
     {
-        title: "📊 Custom Dashboards",
+        title: "Custom Dashboards",
         description: "Data-driven web applications and dashboards tailored to business needs with real-time analytics and interactive visualizations.",
     },
     {
-        title: "🧠 AI-Powered Analytics",
+        title: "AI-Powered Analytics",
         description: "Intelligent responses and deep analytics to understand data better with predictive analytics and automated reporting.",
     },
     {
-        title: "⭐ Complete AI Solutions",
+        title: "Complete AI Solutions",
         description: "End-to-end AI automation for businesses ready to transform operations with full-stack development and AI model integration.",
     },
 ];

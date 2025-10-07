@@ -104,3 +104,135 @@ button.btn.ac_btn:hover {
 .social-link.telegram {
     background: #0088cc;
 }
+
+/* Social Icons Clean Styling */
+.social-icons-clean {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 1rem;
+}
+
+.social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background: #f8f9fa; /* Light background for better contrast */
+    border-radius: 12px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 2px solid #e9ecef;
+    color: #6c757d; /* Default gray color for visibility */
+    position: relative;
+    overflow: hidden;
+}
+
+.social-icon::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, var(--primary-color), var(--primary-color-light, #333));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: -1;
+}
+
+.social-icon:hover {
+    transform: translateY(-3px);
+    border-color: var(--primary-color);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    color: white;
+}
+
+.social-icon:hover::before {
+    opacity: 1;
+}
+
+.social-icon svg {
+    width: 24px;
+    height: 24px;
+    transition: all 0.3s ease;
+    fill: #6c757d; /* Ensure SVGs are visible with gray color */
+}
+
+.social-icon:hover svg {
+    transform: scale(1.1);
+    fill: white; /* White color on hover for contrast */
+}
+
+/* Specific brand colors on hover */
+.social-icon:nth-child(1):hover { /* LinkedIn */
+    background: #0077b5;
+    border-color: #0077b5;
+}
+
+.social-icon:nth-child(2):hover { /* Instagram */
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    border-color: #e4405f;
+}
+
+.social-icon:nth-child(3):hover { /* Facebook */
+    background: #1877f2;
+    border-color: #1877f2;
+}
+
+.social-icon:nth-child(4):hover { /* Twitter/X */
+    background: #1da1f2;
+    border-color: #1da1f2;
+}
+
+.social-icon:nth-child(5):hover { /* Telegram */
+    background: #0088cc;
+    border-color: #0088cc;
+}
+
+.social-icon:nth-child(6):hover { /* GitHub */
+    background: #333;
+    border-color: #333;
+}
+
+.social-icon:nth-child(7):hover { /* Email */
+    background: #ea4335;
+    border-color: #ea4335;
+}
+
+/* Responsive Design for Clean Social Icons */
+@media (max-width: 768px) {
+    .social-icons-clean {
+        justify-content: center;
+        gap: 12px;
+    }
+    
+    .social-icon {
+        width: 45px;
+        height: 45px;
+    }
+    
+    .social-icon svg {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .social-icons-clean {
+        gap: 10px;
+    }
+    
+    .social-icon {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .social-icon svg {
+        width: 18px;
+        height: 18px;
+    }
+}
