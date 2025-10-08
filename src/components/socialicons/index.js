@@ -35,10 +35,7 @@ const ICON_MAPPING = {
   linkedin: FaLinkedin,
   snapchat: FaSnapchatGhost,
   telegram: FaTelegramPlane,
-  tiktok: FaTiktok,
   twitter: XIcon,
-  twitch: FaTwitch,
-  youtube: FaYoutube
 };
 
 export const Socialicons = (params) => {

@@ -24,7 +24,7 @@
 - **Instagram**: https://www.instagram.com/iam_salimuddin_07/
 - **Twitter**: https://x.com/salimuddin007
 - **Facebook**: https://www.facebook.com/salimuddin007/
-- **Telegram**: https://web.telegram.org/k/
+- **Telegram**: https://t.me/salimuddin07
 
 ---
 

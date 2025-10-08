@@ -167,7 +167,7 @@ const socialprofils = {
     linkedin: "https://www.linkedin.com/in/salimuddin07",
     twitter: "https://x.com/salimuddin007",
     instagram: "https://www.instagram.com/iam_salimuddin_07/",
-    telegram: "https://web.telegram.org/k/",
+    telegram: "https://t.me/salimuddin07",
 };
 
 export {
