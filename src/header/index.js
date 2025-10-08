@@ -1,23 +1,41 @@
 import React, { useState } from "react";
 import "./style.css";
 import { VscGrabber, VscClose } from "react-icons/vsc";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { logotext ,socialprofils } from "../content_option";
 import Themetoggle from "../components/themetoggle";
 
 const Headermain = () => {
   const [isActive, setActive] = useState("false");
+  const location = useLocation();
 
   const handleToggle = () => {
     setActive(!isActive);
     document.body.classList.toggle("ovhidden");
   };
 
+  const handleNavClick = (path, e) => {
+    // Prevent navigation if already on the same page
+    if (location.pathname === path) {
+      e.preventDefault();
+      return;
+    }
+    handleToggle();
+  };
+
+  const handleLogoClick = (e) => {
+    // Prevent navigation if already on home page
+    if (location.pathname === "/") {
+      e.preventDefault();
+      return;
+    }
+  };
+
   return (
     <>
       <header className="fixed-top site__header">
         <div className="d-flex align-items-center justify-content-between">
-          <Link  className="navbar-brand nav_ac" to="/">
+          <Link  className="navbar-brand nav_ac" to="/" onClick={handleLogoClick}>
             {logotext}
           </Link>
           <div className="d-flex align-items-center">
@@ -35,16 +53,16 @@ const Headermain = () => {
               <div className="menu__container p-3">
                 <ul className="the_menu">
                   <li className="menu_item ">
-                  <Link  onClick={handleToggle} to="/" className="my-3">Home</Link>
+                  <Link  onClick={(e) => handleNavClick("/", e)} to="/" className="my-3">Home</Link>
                   </li>
                   <li className="menu_item">
-                    <Link  onClick={handleToggle} to="/portfolio" className="my-3"> Portfolio</Link>
+                    <Link  onClick={(e) => handleNavClick("/portfolio", e)} to="/portfolio" className="my-3"> Portfolio</Link>
                   </li>
                   <li className="menu_item">
-                  <Link onClick={handleToggle} to="/about" className="my-3">About</Link>
+                  <Link onClick={(e) => handleNavClick("/about", e)} to="/about" className="my-3">About</Link>
                   </li>
                   <li className="menu_item">
-                  <Link onClick={handleToggle} to="/contact" className="my-3"> Contact</Link>
+                  <Link onClick={(e) => handleNavClick("/contact", e)} to="/contact" className="my-3"> Contact</Link>
                   </li>
                 </ul>
               </div>
