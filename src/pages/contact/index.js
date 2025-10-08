@@ -24,19 +24,12 @@ export const ContactUs = () => {
     const templateParams = {
       from_name: formData.email,
       user_name: formData.name,
+      user_email: formData.email,
       to_name: contactConfig.YOUR_EMAIL,
       message: formData.message,
     };
 
-    // Auto-reply parameters (to sender)
-    const autoReplyParams = {
-      to_email: formData.email,
-      user_name: formData.name,
-      from_name: formData.email,
-      message: formData.message,
-    };
-
-    // Send notification to you
+    // Send main notification (to you)
     emailjs
       .send(
         contactConfig.YOUR_SERVICE_ID,
@@ -46,9 +39,19 @@ export const ContactUs = () => {
       )
       .then(
         (result) => {
-          console.log("Notification sent:", result.text);
+          console.log("Notification sent successfully:", result.text);
           
-          // Send auto-reply to the sender
+          // Now send auto-reply to the contact person
+          const autoReplyParams = {
+            to_name: formData.name,
+            from_name: "Salimuddin Saiyed",
+            reply_to: contactConfig.YOUR_EMAIL,
+            user_name: formData.name,
+            user_email: formData.email,
+            original_message: formData.message,
+            to_email: formData.email, // This is the key - recipient's email
+          };
+
           return emailjs.send(
             contactConfig.YOUR_SERVICE_ID,
             contactConfig.AUTO_REPLY_TEMPLATE_ID,
@@ -59,25 +62,35 @@ export const ContactUs = () => {
       )
       .then(
         (autoReplyResult) => {
-          console.log("Auto-reply sent:", autoReplyResult.text);
+          console.log("Auto-reply sent successfully:", autoReplyResult.text);
           setFormdata({
             loading: false,
-            alertmessage: "SUCCESS! Message sent and confirmation email delivered.",
+            alertmessage: "SUCCESS! Message sent and confirmation email delivered to you.",
             variant: "success",
             show: true,
           });
         },
         (error) => {
-          console.log("Error:", error.text);
+          console.log("Error sending auto-reply:", error);
+          // Even if auto-reply fails, the main message was sent successfully
           setFormdata({
             loading: false,
-            alertmessage: `Failed to send: ${error.text}`,
-            variant: "danger",
+            alertmessage: "SUCCESS! Message sent. (Auto-confirmation may have failed, but I got your message!)",
+            variant: "success",
             show: true,
           });
-          document.getElementsByClassName("co_alert")[0].scrollIntoView();
         }
-      );
+      )
+      .catch((error) => {
+        console.log("Error sending main notification:", error.text);
+        setFormdata({
+          loading: false,
+          alertmessage: `Failed to send: ${error.text}`,
+          variant: "danger",
+          show: true,
+        });
+        document.getElementsByClassName("co_alert")[0].scrollIntoView();
+      });
   };
 
   const handleChange = (e) => {

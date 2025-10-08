@@ -158,8 +158,8 @@ const contactConfig = {
     YOUR_SERVICE_ID: "service_r2lb01p", 
     YOUR_TEMPLATE_ID: "template_bor2hy3", 
     YOUR_USER_ID: "YtvhmUm_SuFv6oKI-",
-    // Auto-reply (to sender) - Create a second template for this
-    AUTO_REPLY_TEMPLATE_ID: "template_wr3uejg", // Replace with your auto-reply template ID
+    // Auto-reply (to sender) - Replace with your actual auto-reply template ID
+    AUTO_REPLY_TEMPLATE_ID: "template_wr3uejg", // Replace with your real auto-reply template ID
 };
 
 const socialprofils = {
