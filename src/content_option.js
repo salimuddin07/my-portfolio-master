@@ -154,11 +154,13 @@ const contactConfig = {
     YOUR_EMAIL: "salimuddinsaiyed5@gmail.com",
     YOUR_FONE: "+91-XXXXXXXXXX",
     description: "Ready to transform your business with AI automation? Let's discuss your web scraping, data extraction, or automation needs. I'm here to help you build intelligent solutions that drive results.",
-    // creat an emailjs.com account 
-    // check out this tutorial https://www.emailjs.com/docs/examples/reactjs/
-    YOUR_SERVICE_ID: "service_id",
-    YOUR_TEMPLATE_ID: "template_id",
-    YOUR_USER_ID: "user_id",
+    // Replace these with your actual EmailJS credentials:
+    // 1. Get Public Key from: https://dashboard.emailjs.com/admin/account
+    // 2. Get Service ID from: https://dashboard.emailjs.com/admin (after adding Gmail service)
+    // 3. Get Template ID from: https://dashboard.emailjs.com/admin/templates (after creating template)
+    YOUR_SERVICE_ID: "service_r2lb01p", // Replace with your Gmail service ID
+    YOUR_TEMPLATE_ID: "template_bor2hy3", // Replace with your template ID  
+    YOUR_USER_ID: "YtvhmUm_SuFv6oKI-", // Replace with your Public Key
 };
 
 const socialprofils = {
