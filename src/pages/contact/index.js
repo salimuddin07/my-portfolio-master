@@ -28,6 +28,15 @@ export const ContactUs = () => {
       message: formData.message,
     };
 
+    // Auto-reply parameters (to sender)
+    const autoReplyParams = {
+      to_email: formData.email,
+      user_name: formData.name,
+      from_name: formData.email,
+      message: formData.message,
+    };
+
+    // Send notification to you
     emailjs
       .send(
         contactConfig.YOUR_SERVICE_ID,
@@ -37,18 +46,32 @@ export const ContactUs = () => {
       )
       .then(
         (result) => {
-          console.log(result.text);
+          console.log("Notification sent:", result.text);
+          
+          // Send auto-reply to the sender
+          return emailjs.send(
+            contactConfig.YOUR_SERVICE_ID,
+            contactConfig.AUTO_REPLY_TEMPLATE_ID,
+            autoReplyParams,
+            contactConfig.YOUR_USER_ID
+          );
+        }
+      )
+      .then(
+        (autoReplyResult) => {
+          console.log("Auto-reply sent:", autoReplyResult.text);
           setFormdata({
             loading: false,
-            alertmessage: "SUCCESS! ,Thankyou for your messege",
+            alertmessage: "SUCCESS! Message sent and confirmation email delivered.",
             variant: "success",
             show: true,
           });
         },
         (error) => {
-          console.log(error.text);
+          console.log("Error:", error.text);
           setFormdata({
-            alertmessage: `Faild to send!,${error.text}`,
+            loading: false,
+            alertmessage: `Failed to send: ${error.text}`,
             variant: "danger",
             show: true,
           });
