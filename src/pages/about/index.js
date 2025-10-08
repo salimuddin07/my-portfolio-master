@@ -96,7 +96,7 @@ export const About = () => {
         </Row>
         <Row className="sec_sp">
           <Col lg="12">
-            <h3 className="color_sec py-4 text-center">💻 My Favorite Tools and Technologies</h3>
+            <h3 className="color_sec py-4 text-center">My Favorite Tools and Technologies</h3>
             <div className="tech-stack-container">
               <table className="tech-stack-table">
                 <tbody>
