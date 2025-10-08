@@ -21,12 +21,14 @@ export const ContactUs = () => {
     e.preventDefault();
     setFormdata({ loading: true });
 
+    // Template parameters for main notification (to you)
+    // These must match your EmailJS template exactly
     const templateParams = {
-      from_name: formData.email,
-      user_name: formData.name,
-      user_email: formData.email,
+      from_name: formData.email,      // User's EMAIL (for {{from_name}} in your template)
+      user_name: formData.name,       // User's NAME (for {{user_name}} in your template)
+      message: formData.message,      // User's MESSAGE (for {{message}} in your template)
       to_name: contactConfig.YOUR_EMAIL,
-      message: formData.message,
+      current_time: new Date().toLocaleString(), // Add timestamp
     };
 
     // Send main notification (to you)
@@ -41,15 +43,15 @@ export const ContactUs = () => {
         (result) => {
           console.log("Notification sent successfully:", result.text);
           
-          // Now send auto-reply to the contact person
+          // Auto-reply parameters (to the contact person)
+          // These must match your auto-reply template exactly
           const autoReplyParams = {
-            to_name: formData.name,
-            from_name: "Salimuddin Saiyed",
-            reply_to: contactConfig.YOUR_EMAIL,
-            user_name: formData.name,
-            user_email: formData.email,
-            original_message: formData.message,
-            to_email: formData.email, // This is the key - recipient's email
+            to_email: formData.email,        // WHERE to send (recipient's email)
+            user_name: formData.name,        // User's name (for {{user_name}} in template)
+            user_email: formData.email,      // User's email (for {{user_email}} in template)
+            message: formData.message,       // User's message (for {{message}} in template)
+            from_name: "Salimuddin Saiyed",  // Your name (sender)
+            reply_to: contactConfig.YOUR_EMAIL, // Your email for replies
           };
 
           return emailjs.send(
