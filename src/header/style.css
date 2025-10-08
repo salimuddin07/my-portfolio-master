@@ -33,6 +33,7 @@
     height: 50px;
     font-weight: bold;
     z-index: 1000;
+    letter-spacing: 2px;
 }
 
 .nav_ac:hover {
