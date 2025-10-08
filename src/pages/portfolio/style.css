@@ -1,17 +1,30 @@
 .po_items_ho {
-    column-width: 20em;
-    -moz-column-width: 20em;
-    -webkit-column-width: 20em;
-    column-gap: 2rem;
-    -moz-column-gap: 2rem;
-    -webkit-column-gap: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+    .po_items_ho {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .po_items_ho {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
 }
 
 .po_item {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
     width: 100%;
     text-align: left;
-    margin: 0 0 2rem 0;
+    margin: 0;
     position: relative;
     background: var(--secondary-color);
     border-radius: 12px;
@@ -20,6 +33,8 @@
     transition: 0.3s ease;
     font-size: 0;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    min-height: 480px;
 }
 
 .po_item img {
@@ -33,13 +48,11 @@
     position: relative;
     padding: 1.5rem;
     background: var(--bg-color);
-    height: auto;
-    width: auto;
-    top: auto;
-    left: auto;
-    transform: none;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     z-index: 1;
-    display: block;
     opacity: 1;
     border: none;
     font-size: 14px;
@@ -51,6 +64,7 @@
     font-weight: 600;
     margin-bottom: 0.5rem;
     color: var(--primary-color);
+    line-height: 1.3;
 }
 
 .po_item .content .project-category {
@@ -68,12 +82,19 @@
     margin-bottom: 1rem;
     line-height: 1.6;
     color: var(--text-color-2);
+    flex-grow: 1;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .po_item .content .tech-stack {
     margin-bottom: 1rem;
     font-size: 0.85rem;
     color: var(--text-color-2);
+    line-height: 1.4;
 }
 
 .po_item .content .tech-stack strong {
@@ -125,13 +146,41 @@
 }
 
 /* Responsive Design */
+@media (max-width: 1200px) {
+    .po_items_ho {
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    }
+}
+
 @media (max-width: 768px) {
     .po_items_ho {
-        column-width: auto;
-        columns: 1;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
     }
     
     .po_item {
-        margin-bottom: 1.5rem;
+        min-height: 420px;
+    }
+    
+    .po_item .content {
+        padding: 1.25rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .po_items_ho {
+        gap: 1rem;
+    }
+    
+    .po_item {
+        min-height: 380px;
+    }
+    
+    .po_item .content {
+        padding: 1rem;
+    }
+    
+    .po_item .content h4 {
+        font-size: 1.1rem;
     }
 }

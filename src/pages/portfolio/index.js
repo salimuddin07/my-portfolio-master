@@ -18,7 +18,7 @@ export const Portfolio = () => {
             <h1 className="display-4 mb-4"> Featured Projects </h1>{" "}
             <hr className="t_border my-4 ml-0 text-left" />
             <p className="lead">
-              Showcasing expertise in AI automation, web scraping, and full-stack development with 50+ successful projects completed.
+              Demonstrating expertise in AI automation, advanced web scraping, and full-stack development, with a focus on building robust data extraction pipelines, intelligent automation workflows, and scalable web solutions that drive actionable insights.
             </p>
           </Col>
         </Row>
