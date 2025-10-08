@@ -78,29 +78,29 @@
 }
 
 .achievement-item {
-    background: var(--secondary-color);
+    background: var(--bg-color);
     padding: 2rem 1rem;
     border-radius: 12px;
     text-align: center;
     transition: 0.3s ease;
-    border: 2px solid transparent;
+    border: 2px solid var(--secondary-color);
 }
 
 .achievement-item:hover {
     transform: translateY(-5px);
-    border-color: var(--primary-color);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    border-color: var(--secondary-color);
+    box-shadow: 0 8px 25px rgba(255, 255, 255, 0.1);
 }
 
 .achievement-item .achievement-number {
-    color: var(--primary-color);
+    color: var(--secondary-color);
     font-size: 2.5rem;
     font-weight: bold;
     margin-bottom: 0.5rem;
 }
 
 .achievement-item p {
-    color: var(--text-color-2);
+    color: var(--text-color);
     margin: 0;
     font-weight: 500;
     font-size: 0.9rem;
