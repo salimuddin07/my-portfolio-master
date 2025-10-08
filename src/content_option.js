@@ -10,6 +10,9 @@ const introdata = {
         first: "I build AI automation solutions",
         second: "I create web scraping systems",
         third: "I develop intelligent workflows",
+        fourth: "I design chatbot integrations",
+        fifth: "I automate business processes",
+        sixth: "I extract data intelligently"
     },
     description: "Passionate about creating AI-powered solutions and data extraction systems that revolutionize how businesses operate. Expert in web scraping with Node.js, specializing in building intelligent automated workflows, data collection systems, and modern web applications.",
     your_img_url: "profile.png", // add profile image in src/assets folder

@@ -1,0 +1,91 @@
+.synced-typewriter {
+  display: inline-block;
+  min-height: 1.2em;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+}
+
+.typed-text {
+  color: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  transition: none; /* No transition for instant character appearance */
+}
+
+.cursor {
+  display: inline-block;
+  margin-left: 3px;
+  color: var(--secondary-color);
+  font-weight: 300;
+  font-size: 1.1em;
+  animation: none;
+  transition: opacity 0.1s ease;
+}
+
+.cursor.blinking {
+  animation: smoothBlink 1.2s infinite;
+}
+
+.cursor.steady {
+  animation: none;
+  opacity: 1;
+}
+
+@keyframes smoothBlink {
+  0%, 45% {
+    opacity: 1;
+  }
+  50%, 95% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Enhanced typing effect */
+.synced-typewriter {
+  position: relative;
+  overflow: hidden;
+}
+
+.typed-text {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+/* Smooth character appearance */
+.typed-text::after {
+  content: '';
+  position: absolute;
+  right: -2px;
+  top: 0;
+  height: 100%;
+  background: transparent;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .cursor {
+    font-size: 1em;
+    margin-left: 2px;
+  }
+}
+
+/* Dark/Light mode compatibility */
+[data-theme="light"] .cursor {
+  color: var(--text-color);
+}
+
+[data-theme="dark"] .cursor {
+  color: var(--secondary-color);
+}
+
+/* Smooth text rendering */
+.typed-text {
+  font-feature-settings: "kern" 1;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
