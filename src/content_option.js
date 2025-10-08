@@ -98,7 +98,7 @@ const dataportfolio = [{
         description: "Comprehensive web scraping solution with Node.js, capable of extracting data from complex websites with anti-detection measures. 50+ scrapers deployed successfully.",
         link: "https://github.com/salimuddin07",
         category: "Web Scraping",
-        tech: "Node.js, Puppeteer, Playwright, Cheerio"
+        tech: "Node.js, Puppeteer, Playwright, Cheerio, axios, apify"
     },
     {
         img: "https://images.unsplash.com/photo-1531482615713-2afd69097998?w=400&h=300&fit=crop",
@@ -106,7 +106,7 @@ const dataportfolio = [{
         description: "Advanced AI-powered chatbot system with multi-platform integration supporting WhatsApp, Telegram, and web interfaces with NLP.",
         link: "https://github.com/salimuddin07",
         category: "AI Automation",
-        tech: "Node.js, Python, AI APIs, WhatsApp API"
+        tech: "Node.js, JavaScript, Python, AI APIs"
     },
     {
         img: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop",
@@ -114,7 +114,7 @@ const dataportfolio = [{
         description: "Comprehensive dashboard for managing automated workflows, social media posting, and business process optimization with real-time analytics.",
         link: "https://github.com/salimuddin07",
         category: "Web Development",
-        tech: "React, Node.js, MongoDB, n8n"
+        tech: "React, Node.js, MongoDB, n8n, Make, Zapier"
     },
     {
         img: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=400&h=300&fit=crop",
@@ -122,7 +122,7 @@ const dataportfolio = [{
         description: "Intelligent shopping assistant with personalized recommendations, automated customer support, and inventory management integration.",
         link: "https://github.com/salimuddin07",
         category: "AI Integration",
-        tech: "Python, Machine Learning, PostgreSQL, FastAPI"
+        tech: "Node.js, Python,JavaScript, PostgreSQL, n8n, Make"
     },
     {
         img: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=400&h=300&fit=crop",
@@ -130,15 +130,15 @@ const dataportfolio = [{
         description: "Advanced content scheduling and posting automation for Instagram, Facebook, and Twitter with AI-powered content optimization.",
         link: "https://github.com/salimuddin07",
         category: "Content Automation",
-        tech: "JavaScript, Instagram API, Zapier, Vue.js"
+        tech: "JavaScript,API, Zapier,n8n, Make"
     },
     {
         img: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop",
         title: "AI Analytics Platform",
-        description: "Comprehensive data analytics platform with machine learning insights, predictive modeling, and interactive visualizations for business intelligence.",
+        description: "A comprehensive data analytics platform that enables businesses to extract actionable insights through advanced data processing, interactive visualizations, and real-time reporting. Designed for scalability and performance, it empowers teams to make data-driven decisions with ease.",
         link: "https://github.com/salimuddin07",
         category: "Data Science",
-        tech: "Python, TensorFlow, D3.js, AWS"
+        tech: "JavaScript, Python, Node.js, AWS, PostgreSQL, MongoDB, Docker"
     },
     {
         img: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop",
@@ -146,7 +146,7 @@ const dataportfolio = [{
         description: "Scalable enterprise web application with user authentication, real-time notifications, payment integration, and comprehensive admin dashboard.",
         link: "https://github.com/salimuddin07",
         category: "Full-Stack",
-        tech: "React, TypeScript, GraphQL, Docker"
+        tech: "JavaScript, React, TypeScript, Docker"
     },
 ];
 
