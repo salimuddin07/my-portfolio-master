@@ -47,14 +47,20 @@ export const ContactUs = () => {
           // These must match your auto-reply template exactly
           const autoReplyParams = {
             to_email: formData.email,        // WHERE to send (recipient's email)
+            to_name: formData.name,          // Additional recipient name
             user_name: formData.name,        // User's name (for {{user_name}} in template)
+            user_email: formData.email,      // User's email (for {{user_email}} in template)
+            message: formData.message,       // User's message (for {{message}} in template)
             from_name: "Salimuddin Saiyed",  // Your name (sender)
+            reply_email: formData.email,     // CHANGED: Match your template {{reply_email}}
             current_time: new Date().toLocaleString(),
           };
 
+          console.log("Auto-reply parameters:", autoReplyParams); // Debug log
+
           // Send auto-reply to the contact person
           return emailjs.send(
-            contactConfig.YOUR_SERVICE_ID,
+            contactConfig.YOUR_SERVICE_ID, // Same service for now, but you can create separate one
             contactConfig.AUTO_REPLY_TEMPLATE_ID,
             autoReplyParams,
             contactConfig.YOUR_USER_ID
