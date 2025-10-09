@@ -84,6 +84,11 @@
     text-align: center;
     transition: 0.3s ease;
     border: 2px solid var(--secondary-color);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .achievement-item:hover {
@@ -97,6 +102,47 @@
     font-size: 2.5rem;
     font-weight: bold;
     margin-bottom: 0.5rem;
+}
+
+.achievement-item p {
+    color: var(--text-color);
+    margin: 0;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+/* Mobile responsive for achievements */
+@media (max-width: 768px) {
+    .achievements-grid {
+        margin-top: 1rem;
+    }
+    
+    .achievement-item {
+        padding: 1.5rem 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .achievement-item .achievement-number {
+        font-size: 2rem;
+    }
+    
+    .achievement-item p {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .achievement-item {
+        padding: 1.25rem 0.75rem;
+    }
+    
+    .achievement-item .achievement-number {
+        font-size: 1.8rem;
+    }
+    
+    .achievement-item p {
+        font-size: 0.8rem;
+    }
 }
 
 .achievement-item p {
@@ -135,82 +181,251 @@
     }
 }
 
-/* Tech Stack Section Styling */
-.tech-stack-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* Tech Stack Infinite Carousel Styling */
+.tech-stack-carousel-container {
     margin: 2rem 0;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.tech-stack-table {
+.tech-carousel-row {
+    margin-bottom: 2rem;
     width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
-    border-collapse: separate;
-    border-spacing: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+}
+
+.tech-carousel-track {
+    display: inline-flex;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    gap: 30px;
+    align-items: center;
+}
+
+/* Right sliding animation - seamless infinite */
+.tech-carousel-right .tech-carousel-track {
+    animation-name: slideRightInfinite;
+}
+
+/* Left sliding animation - seamless infinite */
+.tech-carousel-left .tech-carousel-track {
+    animation-name: slideLeftInfinite;
+}
+
+@keyframes slideRightInfinite {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes slideLeftInfinite {
+    0% {
+        transform: translateX(-50%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
 }
 
 .tech-item {
-    text-align: center;
-    width: 96px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: 120px;
     padding: 1rem;
     background: var(--secondary-color);
-    border-radius: 12px;
-    transition: 0.3s ease;
+    border-radius: 15px;
+    transition: all 0.3s ease;
     border: 2px solid transparent;
     color: var(--text-color);
     font-weight: 500;
     font-size: 0.85rem;
-    vertical-align: top;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    white-space: nowrap;
+    flex-shrink: 0;
 }
 
 .tech-item:hover {
-    transform: translateY(-5px);
+    transform: translateY(-8px) scale(1.05);
     border-color: var(--primary-color);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
     background: var(--bg-color);
 }
 
 .tech-item img {
-    margin-bottom: 0.5rem;
-    transition: 0.3s ease;
+    margin-bottom: 0.8rem;
+    transition: all 0.3s ease;
+    width: 48px !important;
+    height: 48px !important;
+    display: block;
 }
 
 .tech-item:hover img {
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 
-/* Responsive Design for Tech Stack */
-@media (max-width: 768px) {
-    .tech-stack-table {
-        font-size: 0.75rem;
+.tech-item span {
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.2;
+    white-space: nowrap;
+    display: block;
+}
+
+/* Pause animation on hover */
+.tech-carousel-row:hover .tech-carousel-track {
+    animation-play-state: paused;
+}
+
+/* Responsive Design for Tech Carousel */
+@media (max-width: 1200px) {
+    .tech-carousel-track {
+        gap: 25px;
     }
     
     .tech-item {
-        width: 80px;
-        padding: 0.75rem;
+        width: 120px;
+        height: 100px;
+        padding: 0.8rem;
     }
     
     .tech-item img {
-        width: 32px !important;
-        height: 32px !important;
+        width: 42px !important;
+        height: 42px !important;
+    }
+    
+    .tech-item span {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .tech-stack-carousel-container {
+        margin: 1.5rem 0;
+    }
+    
+    .tech-carousel-row {
+        margin-bottom: 1.5rem;
+    }
+    
+    .tech-carousel-track {
+        gap: 20px;
+        animation-duration: 25s;
+    }
+    
+    .tech-item {
+        width: 110px;
+        height: 90px;
+        padding: 0.7rem;
+    }
+    
+    .tech-item img {
+        width: 38px !important;
+        height: 38px !important;
+        margin-bottom: 0.6rem;
+    }
+    
+    .tech-item span {
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .tech-stack-carousel-container {
+        margin: 1rem 0;
+    }
+    
+    .tech-carousel-row {
+        margin-bottom: 1.2rem;
+    }
+    
+    .tech-carousel-track {
+        gap: 15px;
+        animation-duration: 20s;
+    }
+    
+    .tech-item {
+        width: 100px;
+        height: 80px;
+        padding: 0.6rem;
+    }
+    
+    .tech-item img {
+        width: 34px !important;
+        height: 34px !important;
+        margin-bottom: 0.5rem;
+    }
+    
+    .tech-item span {
+        font-size: 0.7rem;
     }
 }
 
 @media (max-width: 576px) {
-    .tech-stack-table {
-        border-spacing: 5px;
+    .tech-stack-carousel-container {
+        margin: 0.8rem 0;
+    }
+    
+    .tech-carousel-row {
+        margin-bottom: 1rem;
+    }
+    
+    .tech-carousel-track {
+        gap: 12px;
+        animation-duration: 18s;
     }
     
     .tech-item {
-        width: 60px;
+        width: 90px;
+        height: 70px;
         padding: 0.5rem;
-        font-size: 0.7rem;
     }
     
     .tech-item img {
-        width: 24px !important;
-        height: 24px !important;
+        width: 30px !important;
+        height: 30px !important;
+        margin-bottom: 0.4rem;
+    }
+    
+    .tech-item span {
+        font-size: 0.65rem;
+        line-height: 1.1;
+    }
+}
+
+@media (max-width: 480px) {
+    .tech-carousel-track {
+        gap: 10px;
+        animation-duration: 15s;
+    }
+    
+    .tech-item {
+        width: 80px;
+        height: 65px;
+        padding: 0.4rem;
+    }
+    
+    .tech-item img {
+        width: 28px !important;
+        height: 28px !important;
+    }
+    
+    .tech-item span {
+        font-size: 0.6rem;
     }
 }

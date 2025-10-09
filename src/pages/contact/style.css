@@ -198,41 +198,117 @@ button.btn.ac_btn:hover {
     border-color: #333;
 }
 
-.social-icon:nth-child(7):hover { /* Email */
-    background: #ea4335;
-    border-color: #ea4335;
+/* Responsive Design for Clean Social Icons */
+@media (max-width: 991px) {
+    .social-links {
+        margin-top: 3rem;
+        text-align: center;
+        padding: 2rem 1rem;
+        background: transparent;
+        border: none;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .social-links h5 {
+        color: var(--primary-color);
+        margin-bottom: 1.5rem;
+        font-size: 1.2rem;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .social-icons-clean {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+        flex-wrap: nowrap; /* Prevent wrapping */
+        gap: 10px; /* Reduced gap to fit all icons */
+    }
+    
+    .contact__form {
+        margin-bottom: 2rem;
+    }
 }
 
-/* Responsive Design for Clean Social Icons */
 @media (max-width: 768px) {
     .social-icons-clean {
         justify-content: center;
-        gap: 12px;
+        gap: 8px; /* Smaller gap for mobile */
+        flex-wrap: nowrap; /* Prevent wrapping */
+        width: 100%;
+        max-width: 320px; /* Increased max-width to accommodate all icons */
+        margin: 0 auto;
     }
     
     .social-icon {
-        width: 45px;
-        height: 45px;
-    }
-    
-    .social-icon svg {
-        width: 20px;
-        height: 20px;
-    }
-}
-
-@media (max-width: 576px) {
-    .social-icons-clean {
-        gap: 10px;
-    }
-    
-    .social-icon {
-        width: 40px;
-        height: 40px;
+        width: 42px; /* Slightly smaller icons */
+        height: 42px;
     }
     
     .social-icon svg {
         width: 18px;
         height: 18px;
+    }
+    
+    .social-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 1.5rem 1rem;
+    }
+    
+    .social-links h5 {
+        text-align: center;
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .social-links {
+        margin-top: 2rem;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .social-icons-clean {
+        gap: 6px; /* Very small gap for smallest screens */
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 300px; /* Adjusted for 6 icons */
+        margin: 0 auto;
+        flex-wrap: nowrap; /* Never wrap */
+    }
+    
+    .social-icon {
+        width: 38px; /* Smaller icons for very small screens */
+        height: 38px;
+    }
+    
+    .social-icon svg {
+        width: 16px;
+        height: 16px;
+    }
+    
+    .social-links h5 {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+        text-align: center;
+        width: 100%;
     }
 }
