@@ -71,6 +71,9 @@ export const ContactUs = () => {
         (autoReplyResult) => {
           console.log("Auto-reply sent successfully:", autoReplyResult.text);
           setFormdata({
+            email: "",
+            name: "",
+            message: "",
             loading: false,
             alertmessage: "✅ SUCCESS! Your message was sent successfully. Check your email for a confirmation!",
             variant: "success",
