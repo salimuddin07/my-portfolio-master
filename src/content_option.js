@@ -20,7 +20,7 @@ const introdata = {
 
 const dataabout = {
     title: "About My Expertise",
-    aboutme: "AI Automation Developer & Web Scraping Expert with proven expertise in creating intelligent automation solutions. Specialized in Node.js development with 50+ successful web scrapers deployed and 30+ automation tools created. I transform business operations through data extraction systems, chatbot integrations, and custom workflow automation.",
+    aboutme: "AI Automation Developer & Web Scraping Expert with proven expertise in building intelligent automation solutions that streamline business operations. Specializing in Node.js development, I design and implement advanced web scraping systems, chatbot integrations, and custom workflow automation tools. My work focuses on transforming complex processes into efficient, data-driven solutions that enhance productivity and decision-making.",
 };
 
 const worktimeline = [{
