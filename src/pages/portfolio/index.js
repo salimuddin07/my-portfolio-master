@@ -29,6 +29,7 @@ export const Portfolio = () => {
                 <img src={data.img} alt={data.title} />
                 <div className="content">
                   <h4>{data.title}</h4>
+                  <hr className="project-title-border" />
                   <span className="project-category">{data.category}</span>
                   <p>{data.description}</p>
                   <div className="tech-stack">
