@@ -14,6 +14,8 @@
 
 button.btn.ac_btn:hover {
     color: var(--secondary-color);
+    border-color: var(--text-color-3);
+    box-shadow: 8px 8px 0px var(--text-color-3), -8px -8px 0px var(--text-color-3);
 }
 
 .loading-bar {
@@ -75,10 +77,8 @@ button.btn.ac_btn:hover {
 }
 
 .social-link:hover {
-    background: var(--primary-color-dark);
-    text-decoration: none;
-    color: white;
-    transform: translateY(-2px);
+    background: var(--text-color-3);
+    border-color: var(--text-color-3);
 }
 
 .social-link.github {
@@ -146,8 +146,8 @@ button.btn.ac_btn:hover {
 
 .social-icon:hover {
     transform: translateY(-3px);
-    border-color: var(--primary-color);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    border-color: var(--text-color-3);
+    box-shadow: 0 8px 25px rgba(204, 0, 0, 0.3);
     color: white;
 }
 

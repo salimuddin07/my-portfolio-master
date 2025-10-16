@@ -213,7 +213,7 @@ section {
 }
 
 .ac_btn:hover {
-    box-shadow: 8px 8px 0px var(--text-color), -8px -8px 0px var(--text-color);
+    box-shadow: 8px 8px 0px var(--text-color-3), -8px -8px 0px var(--text-color-3);
 }
 
 .ac_btn:hover .one {

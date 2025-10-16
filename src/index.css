@@ -92,3 +92,11 @@ code {
 .color_sec {
     color: var(--secondary-color);
 }
+
+/* Global button hover styles - cursor color consistency */
+button:hover,
+.btn:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover {
+    border-color: var(--text-color-3) !important;
+}
