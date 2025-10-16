@@ -66,6 +66,48 @@
     border-bottom: solid 2px var(--secondary-color);
     color: var(--text-color);
     font-weight: 600;
+    width: 100%;
+    display: block;
+}
+
+/* Work timeline job title styling to match services */
+.table th {
+    padding: 8px 0 !important;
+    border-bottom: solid 2px var(--secondary-color) !important;
+    color: var(--text-color);
+    font-weight: 600;
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+}
+
+/* Make underline span full row width */
+.table tr {
+    border-bottom: solid 2px var(--secondary-color) !important;
+}
+
+.table th {
+    border-bottom: none !important;
+    padding: 8px 0 !important;
+    color: var(--text-color);
+    font-weight: 600;
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+}
+
+/* Remove all other table borders to ensure clean underlines */
+.table td {
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-bottom: none !important;
+    padding: 8px 0 !important;
+}
+
+/* Ensure table itself has no borders */
+.table {
+    border: none !important;
 }
 
 .service-section .service-category-title {
