@@ -26,11 +26,13 @@ const dataabout = {
 const worktimeline = [{
         jobtitle: "AI Automation Developer & Web Scraping Expert",
         where: "Pimatrix Systems",
+        companyUrl: "https://pimatrixsystem.com/",
         date: "This Year",
     },
     {
         jobtitle: "Full-Stack Developer",
         where: "Pimatrix Systems",
+        companyUrl: "https://pimatrixsystem.com/",
         date: "This Year",
     },
 ];
@@ -71,42 +73,42 @@ const skills = [{
 
 const services = [{
         title: "Web Scraping & Data Extraction",
-        description: "Expert-level web scraping solutions using Node.js for automated data collection from any website. 50+ successful scrapers deployed with anti-detection and proxy management.",
+        description: "Specialized in building scalable Apify Actors and Crawlee-based web scrapers using Node.js for automated, reliable data extraction. Expert in handling complex sites with anti-detection, proxy rotation, and structured data delivery for seamless business integration.",
     },
     {
         title: "AI Chatbot Integrations",
-        description: "WhatsApp, Telegram, and Web-based intelligent chatbots that engage customers 24/7 with natural language processing and custom conversation flows.",
+        description: "Designing and developing intelligent WhatsApp, Telegram, and web-based chatbots powered by natural language processing and custom conversation flows to enhance customer engagement and automate interactions.",
     },
     {
         title: "Advanced Workflow Automation",
-        description: "Optimize business processes with n8n, Make, Zapier integrations and custom Node.js automation. 30+ automation tools and workflows created.",
+        description: "Streamlining and optimizing business processes through n8n, Make, Zapier, and custom Node.js automation. Skilled in designing robust, scalable workflows that integrate multiple systems, automate repetitive tasks, and improve operational efficiency.",
     },
     {
         title: "Custom Dashboards",
-        description: "Data-driven web applications and dashboards tailored to business needs with real-time analytics and interactive visualizations.",
+        description: "Developing data-driven web applications and dashboards tailored to business needs, featuring real-time analytics and interactive visualizations for actionable insights.",
     },
     {
         title: "AI-Powered Analytics",
-        description: "Intelligent responses and deep analytics to understand data better with predictive analytics and automated reporting.",
+        description: "Delivering intelligent insights through predictive analytics, automated reporting, and data-driven analysis to help businesses make informed, strategic decisions.",
     },
     {
         title: "Complete AI Solutions",
-        description: "End-to-end AI automation for businesses ready to transform operations with full-stack development and AI model integration.",
+        description: "Providing end-to-end AI automation for businesses, combining full-stack development with seamless AI model integration to transform operations and drive efficiency.",
     },
 ];
 
 const dataportfolio = [{
         img: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=400&h=300&fit=crop",
         title: "Advanced Web Scraping Suite",
-        description: "Comprehensive web scraping solution with Node.js, capable of extracting data from complex websites with anti-detection measures. 50+ scrapers deployed successfully.",
+        description: "Comprehensive Node.js web scraping solution capable of extracting data from complex websites with anti-detection mechanisms. Designed for scalable, reliable, and automated data collection.",
         link: "https://github.com/salimuddin07",
         category: "Web Scraping",
-        tech: "Node.js, Puppeteer, Playwright, Cheerio, axios, apify"
+        tech: "Node.js, Puppeteer, Playwright, Cheerio, axios, Apify"
     },
     {
         img: "https://images.unsplash.com/photo-1531482615713-2afd69097998?w=400&h=300&fit=crop",
         title: "Intelligent Chatbot Platform",
-        description: "Advanced AI-powered chatbot system with multi-platform integration supporting WhatsApp, Telegram, and web interfaces with NLP.",
+        description: "Advanced AI-powered chatbot system with multi-platform integration for WhatsApp, Telegram, and web interfaces, leveraging natural language processing for intelligent interactions.",
         link: "https://github.com/salimuddin07",
         category: "AI Automation",
         tech: "Node.js, JavaScript, Python, AI APIs"
@@ -122,23 +124,23 @@ const dataportfolio = [{
     {
         img: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=400&h=300&fit=crop",
         title: "E-commerce AI Assistant",
-        description: "Intelligent shopping assistant with personalized recommendations, automated customer support, and inventory management integration.",
+        description: "Intelligent shopping assistant providing personalized recommendations, automated customer support, and seamless inventory management integration.",
         link: "https://github.com/salimuddin07",
         category: "AI Integration",
-        tech: "Node.js, Python,JavaScript, PostgreSQL, n8n, Make"
+        tech: "Node.js, Python, JavaScript, PostgreSQL, n8n, Make"
     },
     {
         img: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=400&h=300&fit=crop",
         title: "Social Media Automation",
-        description: "Advanced content scheduling and posting automation for Instagram, Facebook, and Twitter with AI-powered content optimization.",
+        description: "Advanced content scheduling and posting automation for Instagram, Facebook, and Twitter, featuring AI-powered content optimization.",
         link: "https://github.com/salimuddin07",
         category: "Content Automation",
-        tech: "JavaScript,API, Zapier,n8n, Make"
+        tech: "JavaScript, API, Zapier, n8n, Make"
     },
     {
         img: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop",
         title: "AI Analytics Platform",
-        description: "A comprehensive data analytics platform that enables businesses to extract actionable insights through advanced data processing, interactive visualizations, and real-time reporting. Designed for scalability and performance, it empowers teams to make data-driven decisions with ease.",
+        description: "Comprehensive data analytics platform enabling businesses to extract actionable insights through advanced data processing, interactive visualizations, and real-time reporting. Built for scalability and performance, empowering teams to make data-driven decisions efficiently.",
         link: "https://github.com/salimuddin07",
         category: "Data Science",
         tech: "JavaScript, Python, Node.js, AWS, PostgreSQL, MongoDB, Docker"
@@ -146,7 +148,7 @@ const dataportfolio = [{
     {
         img: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop",
         title: "Enterprise Web Application",
-        description: "Scalable enterprise web application with user authentication, real-time notifications, payment integration, and comprehensive admin dashboard.",
+        description: "Scalable enterprise web application featuring user authentication, real-time notifications, payment integration, and a comprehensive admin dashboard.",
         link: "https://github.com/salimuddin07",
         category: "Full-Stack",
         tech: "JavaScript, React, TypeScript, Docker"
