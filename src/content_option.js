@@ -54,16 +54,40 @@ const skills = [{
         value: 85,
     },
     {
-        name: "MongoDB",
-        value: 85,
-    },
-    {
         name: "PHP",
         value: 75,
     },
     {
+        name: "PostgreSQL",
+        value: 55,
+    },
+    {
+        name: "AWS",
+        value: 50,
+    },
+    {
+        name: "Supabase",
+        value: 60,
+    },
+    {
+        name: "MongoDB",
+        value: 85,
+    },
+    {
         name: "Python",
         value: 45,
+    },
+    {
+        name: "n8n",
+        value: 85,
+    },
+    {
+        name: "Zapier",
+        value: 50,
+    },
+    {
+        name: "Make",
+        value: 60,
     },
     {
         name: "AI Integration",
